@@ -937,6 +937,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toggle1: {fileID: 4474723998675987702}
   toggle2: {fileID: 4474723997591185597}
+  button1: {fileID: 4474723997743685702}
+  button2: {fileID: 4474723999332526134}
 --- !u!224 &4474723998342984860
 RectTransform:
   m_ObjectHideFlags: 0

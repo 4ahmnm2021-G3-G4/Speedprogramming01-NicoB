@@ -7,6 +7,8 @@ public class ComputeResult : MonoBehaviour
 {
     [SerializeField] Toggle toggle1;
     [SerializeField] Toggle toggle2;
+    [SerializeField] Button button1;
+    [SerializeField] Button button2;
 
     bool toggleOneTrue;
     bool toggleTwoTrue;
@@ -37,5 +39,9 @@ public class ComputeResult : MonoBehaviour
                 GetComponent<Text>().text = "Wahr";
             }
         }
+        button1.interactable = false;
+        button2.interactable = false;
+        toggle1.interactable = false;
+        toggle2.interactable = false;
     }
 }

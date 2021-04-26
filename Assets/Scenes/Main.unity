@@ -823,6 +823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField1: {fileID: 1313561896}
   inputField2: {fileID: 1927640723}
+  buttonAdd: {fileID: 1558539015}
 --- !u!1 &1453538437
 GameObject:
   m_ObjectHideFlags: 0
