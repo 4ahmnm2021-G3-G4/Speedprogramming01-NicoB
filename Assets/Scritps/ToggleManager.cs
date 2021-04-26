@@ -17,6 +17,7 @@ public class ToggleManager : MonoBehaviour
         else
         {
             GetComponent<Text>().text = "Wahr";
+            isTrue = true;
         }
     }
 }
