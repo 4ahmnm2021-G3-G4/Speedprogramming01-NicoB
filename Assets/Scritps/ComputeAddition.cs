@@ -14,7 +14,19 @@ public class ComputeAddition : MonoBehaviour
     int result;
     public void AddNumbers()
     {
-        result = int.Parse(inputField1.text) + int.Parse(inputField2.text);
+        try
+        {
+            result = int.Parse(inputField1.text) + int.Parse(inputField2.text);
+            inputField1.image.color = Color.white;
+            inputField2.image.color = Color.white;
+        }
+        catch (System.Exception)
+        {
+            inputField1.image.color = Color.red;
+            inputField2.image.color = Color.red;
+            GetComponent<Text>().text = "Gib eine Zahl ein!";
+            return;
+        }
         GetComponent<Text>().text = result.ToString();
         buttonAdd.interactable = false;
         inputField1.interactable = false;
